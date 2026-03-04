@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "80684410473",
+    "project_id": "present-app-demo",
+    "storage_bucket": "present-app-demo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80684410473:android:a8a3ac9a15e11d75a6a4f8",
+        "android_client_info": {
+          "package_name": "com.present.present_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvxk4wmWyLDYYYKCDag5kMZFgcRg0kdvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
