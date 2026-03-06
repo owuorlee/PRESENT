@@ -29,15 +29,16 @@ class AttendanceService {
       result.currentStep = 'Verifying device...';
       debugPrint('[Attendance] Factor 1: Device binding check');
 
-      if (student.deviceHash == null) {
-        result.deviceError = 'No registered device found';
-        return result;
-      }
-
       if (demoMode) {
+        // In demo mode, always pass device verification
         result.deviceVerified = true;
         debugPrint('[Attendance] 🎭 Demo mode — device verified');
       } else {
+        if (student.deviceHash == null) {
+          result.deviceError = 'No registered device found';
+          return result;
+        }
+
         result.deviceVerified = await DeviceBindingService.verifyDevice(
           student.deviceHash!,
         );
